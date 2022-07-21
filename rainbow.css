@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div class="rainbow">
+    <div>
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+  }
+  
+  body{
+    background:white;
+  }
+  
+  div{
+    overflow:hidden;
+  }
+  
+  .rainbow{
+    height:200px;
+  }
+  .rainbow > div{
+    width:400px;
+    height:400px;
+    background:rgb(234,41,52);
+    border-radius:50%;
+  }
+  
+  .rainbow > div > div{
+    height:380px;
+    margin:10px;
+    background:rgb(242,139,39);
+    border-radius:50%;
+  }
+  
+  .rainbow > div > div >div{
+    height:360px;
+    margin:10px;
+    background:rgb(244,225,41);
+    border-radius:50%;
+  }
+  
+  .rainbow > div > div > div >div{
+    height:340px;
+    margin:10px;
+    background:rgb(119,204,68);
+    border-radius:50%;
+  }
+  
+  .rainbow > div > div >div >div >div{
+    height:320px;
+    margin:10px;
+    background:rgb(92,174,228);
+    border-radius:50%;
+  }
+  
+  .rainbow > div > div > div > div >div >div{
+    height:300px;
+    margin:10px;
+    background:rgb(70,116,194);
+    border-radius:50%;
+  }
+  
+  .rainbow > div > div > div > div >div >div >div{
+    height:280px;
+    margin:10px;
+    background:rgb(108,40,150);
+    border-radius:50%;
+  }
+  
+  .rainbow > div > div > div > div >div >div >div >div{
+    height:260px;
+    margin:10px;
+    background:rgb(255,255,255);
+    border-radius:50%;
+  }
+  
+  

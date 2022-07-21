@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+/*鼠标悬停提示demo*/
+button{
+  position:relative;
+}
+button span{
+  position:absolute;
+  border:1px solid black;
+  white-space:nowrap;/*设置文字内容不换行*/
+  bottom:calc(100% + 10px);
+  left:50%;
+  transform:translatex(-50%)
+}
+button span{
+  display:none;
+}
+button:hover span{
+  display:inline-block
+}
