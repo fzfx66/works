@@ -1,8 +1,9 @@
-*{maigin:0; padding:0; box-sizing: border-box;}
+*{margin:0; padding:0; box-sizing: border-box;}
 
 #canvas{
+    display:block;     /*canvas默认为 inline */
     /*height: 100vh;*/
     /*width:100vw;*/
-    display:block;      /*默认为 inline */
 }
+
 

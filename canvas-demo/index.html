@@ -2,6 +2,8 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>画板</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -9,8 +11,8 @@
 <canvas id="canvas" width="100" height="100"></canvas>
     <script>
         let canvas = document.getElementById('canvas');
-        canvas.width = document.documentElement.clientWidth                /*canvas占据用户全屏幕*/
-        canvas.height = document.documentElement.clientHeight
+        canvas.width = document.documentElement.clientWidth;               /*canvas占据用户全屏幕*/
+        canvas.height = document.documentElement.clientHeight;
 
         let ctx = canvas.getContext('2d');
         let painting = false
@@ -18,7 +20,7 @@
 
         ctx.fillStyle = 'black';
         ctx.strokeStyle = 'black'
-        ctx.lineWidth = 20;
+        ctx.lineWidth = 5;
         ctx.lineCap = 'round';
 
         function drawLine(x1,y1,x2,y2){
