@@ -6,25 +6,80 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="canvas"></div>
+<canvas id="canvas" width="100" height="100"></canvas>
     <script>
-        canvas.onclick = (e) => {
-            console.log(e.clientX)
-            console.log(e.clientY)
-            let div =document.createElement('div')
-            div.style.position = "absolute"
-            div.style.left = e.clientX + 'px'
-            div.style.top = e.clientY + 'px'
-            div.style.border = "1px solid black"
-            div.style.width = '6px'
-            div.style.height = '6px'
-            div.style.marginleft = '-3px'
-            div.style.margintop = '-3px'
-            div.style.borderRadius = '50%'
-            div.style.background = 'black'
+        let canvas = document.getElementById('canvas');
+        canvas.width = document.documentElement.clientWidth                /*canvas占据用户全屏幕*/
+        canvas.height = document.documentElement.clientHeight
 
-            canvas.appendChild(div)
+        let ctx = canvas.getContext('2d');
+        let painting = false
+        let last
+
+        ctx.fillStyle = 'black';
+        ctx.strokeStyle = 'black'
+        ctx.lineWidth = 20;
+        ctx.lineCap = 'round';
+
+        function drawLine(x1,y1,x2,y2){
+            ctx.beginPath();
+            ctx.moveTo(x1,y1);
+            ctx.lineTo(x2,y2);
+            ctx.stroke();
+        }
+
+        let isTouchDevice = 'ontouchstart' in document.documentElement;     /*判断是否是 触摸 模式*/
+
+        if (isTouchDevice){
+            canvas.ontouchstart = (e) => {
+                let x = e.touches[0].clientX
+                let y = e.touches[0].clientY
+                last = [x, y]                                               /*获取 drawLine 的起始位点*/
+            }
+            canvas.ontouchmove = (e) => {
+                let x = e.touches[0].clientX
+                let y = e.touches[0].clientY
+                drawLine(last[0], last[1], x, y)
+                last = [x, y]
+            }
+        }else{
+            canvas.onmousedown = (e) =>{
+                painting = true
+                last = [e.clientX, e.clientY]
+            }
+            canvas.onmouseup = () =>{
+                painting = false
+            }
+            canvas.onmousemove = (e) => {
+                if(painting === true){
+                    // ctx.arc(e.clientX, e.clientY, 10, 0, 2 * Math.PI);   改用更好的方法
+                    drawLine(last[0], last[1], e.clientX, e.clientY)
+                    last = [e.clientX, e.clientY]
+                }
+            }
         }
     </script>
 </body>
 </html>
+
+
+<!--// dom跨线程，不推荐使用-->
+<!--//     &lt;!&ndash;<div id="canvas"></div>&ndash;&gt;-->
+<!--// script{-->
+<!--// // canvas.onclick = (e) => {-->
+<!--//     canvas.onmousemove = (e) => {-->
+<!--//     console.log(e.clientX)-->
+<!--//     console.log(e.clientY)-->
+<!--//     let div =document.createElement('div')-->
+<!--//     div.style.position = "absolute"-->
+<!--//     div.style.left = e.clientX + 'px'-->
+<!--//     div.style.top = e.clientY + 'px'-->
+<!--//     div.style.border = "1px solid black"-->
+<!--//     div.style.width = '6px'-->
+<!--//     div.style.height = '6px'-->
+<!--//     div.style.marginleft = '-3px'-->
+<!--//     div.style.margintop = '-3px'-->
+<!--//     div.style.borderRadius = '50%'-->
+<!--//     div.style.background = 'black'-->
+<!--//     canvas.appendChild(div)-->
+<!--// }script-->
