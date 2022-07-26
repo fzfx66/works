@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://js.jirengu.com
+
+Copyright (c) 2022 by anonymous (http://js.jirengu.com/borobewuto/2/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+
+*{border:0; padding:0;box-sizing:border-box;}
+
+#demo{
+  border:2px solid red;
+  width:80px;
+  height:80px;
+  position:relative;
+  left:0px;
+}
+
+#demo2{
+  border:2px solid blue;
+  width:80px;
+  height:80px;
+  position:relative;
+  left:0px;
+  transition:all 1s linear;
+}
+
+#demo2.end{ transform:translateX(200px);
+}
+</style>
+</head>
+<body>
+  <div id="demo"></div>
+  
+  <div id="demo2"></div>
+<script id="jsbin-javascript">
+var n=1
+
+var id = setInterval(()=>{
+  if (n<=200){
+  console.log(n)
+   demo.style.left = n + 'px' 
+  n = n + 1
+  }
+  else{        clearInterval(id)
+  }
+},1000/60) 
+
+
+setTimeout(()=>{
+  demo2.classList.add("end")
+},3000)
+</script>
+</body>
+</html>

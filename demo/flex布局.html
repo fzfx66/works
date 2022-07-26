@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://js.jirengu.com
+
+Copyright (c) 2022 by anonymous (http://js.jirengu.com/nubudefixe/2/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+*{margin:0; padding:0; box-sizing:border-box;}
+ul,ol{list-style:none;}
+img{max-width:100%}
+
+header{
+  display:flex;
+  background:gray;
+  color:white;
+}
+
+.logo{
+  display:flex;
+  color:blue;
+  font-size:20px;
+  width:80px;
+  flex-shrink:0;
+}
+
+.command{
+  flex-grow:1;
+  display:flex;
+  justify-content:center;
+}
+
+ul{
+  display:flex;
+  width:200px;
+  flex-shrink:0;
+  margin-left:auto;
+}
+
+ul>li{
+  padding:5px;
+}
+
+.maincent{
+  display:flex;
+  margin-top:10px;
+  min-width:800px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+aside{
+  width:200px;
+  height:300px;
+  background:silver;
+}
+
+main{
+  flex-grow:1;
+  height:300px;
+  background:orange;
+}
+
+.ad{
+  width:100px;
+  height:300px;
+  background:skyblue;
+  display:flex;
+  flex-direction:column;
+}
+.ad > .ad1{
+  height:150px;
+  background:aquamarine;
+}
+.ad > .ad2 > p{
+  color:red;
+}
+
+/*平均布局*/
+
+.average {
+  /*outline:1px solid red;*/
+  min-width:800px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.average > .x{
+  display:flex;
+  height:150px;
+  margin-top:10px;
+  margin-right:-12px;
+  flex-wrap:wrap;
+}
+
+.average > .x > .image{
+  border:1px solid green;
+  margin-right:12px;
+  margin-bottom:10px;
+  width:191px;
+  height:191px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      写代码
+    </div>
+    <div class="command">
+      <div>推送区域</div>
+    </div>
+    <ul>
+      <li>首页</li>
+      <li>课程</li>
+      <li>内容</li>
+      <li>帮助</li>
+    </ul>
+  </header>
+
+  <boder class="maincent">
+    <aside>导航侧边栏</aside>
+    <main class="content">内容区</main>
+    <div class="ad">
+      <div class="ad1">广告位1</div>
+      <div class="ad2">
+        广告位2:<hr>
+        <p>诚招天下英才！快来三国征战！！</p>
+      </div>
+    </div>
+  </boder>
+  
+  <div class="average">
+    <div class="x">
+      <div class="image"></div>
+      <div class="image"></div>
+      <div class="image"></div>
+      <div class="image"></div>
+      <div class="image"></div>
+      <div class="image"></div>
+      <div class="image"></div>
+      <div class="image"></div>
+      <div class="image"></div>
+      <div class="image"></div>
+      <div class="image"></div>
+    </div>
+  </div>
+
+</body>
+</html>

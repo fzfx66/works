@@ -1,0 +1,98 @@
+*{margin:0; padding:0; box-sizing:border-box;}
+ul,ol{list-style:none;}
+img{max-width:100%}
+
+header{
+    height:400px;
+    margin: 0 0 auto auto;
+    background: white url(../pictures/bilibili.png) no-repeat 0 top;    /*置入放大镜图标*/
+}
+
+.head{
+    margin-top: 10px;
+    display:flex;
+    color:white;
+    justify-content: center;
+    align-items:center;
+}
+
+ul{
+    display:flex;
+    width:auto;
+    font-size: 16px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-shrink:0;
+}
+.ul_left{
+    margin-right:auto;
+    margin-left:7px;
+}
+.ul_right{
+    margin-left:auto;
+    margin-right:7px;
+}
+ul>li{
+    padding:7px;
+}
+
+.up_self{
+    border: 0;
+    width: 50px;
+    height: 30px;
+    background: rgb(247,115,153);
+    border-radius: 8px;
+    margin: 7px 7px 7px 7px ;
+    font-size: 16px;
+}
+
+.search{
+    border: 1px solid #eeefed;
+    display:flex;
+    margin:0 50px;
+    /*设置圆角边框*/
+    border-radius: 8px;
+    width-min: 300px;
+    height: 35px;
+    background: #eeefed;
+    flex-grow: 0.7;
+}
+
+input:hover{
+    box-shadow: 2px 2px 2px #ccc;
+}
+
+.search > input{
+    border:0;
+    border-radius: 8px;
+    flex-grow: 1;
+    /*去除激活状态的边框*/
+    outline:none;
+}
+
+.search > button{
+    width:60px;
+    border:0;
+    border-radius: 8px;
+    margin-left: -9px;
+    margin-right: -5px;
+    background: white;
+}
+.search > button > img{
+    height:30px;
+    margin: 1px 1px 2px 8px;
+    padding-top: 3px;
+}
+
+.self_face{
+    width:40px;
+    height:40px;
+    border:1px solid white;
+    border-radius: 50%;
+    margin:auto auto;
+    overflow : hidden;
+    float:left;
+}
+
+
+
