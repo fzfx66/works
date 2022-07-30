@@ -1,0 +1,14 @@
+13
+27E:\Desktop\works\cv-1\.idea133036671202757754 1
+25E:\Desktop\works\cv-1\src133036672187856247 1
+26E:\Desktop\works\cv-1\dist133036672188693195 1
+37E:\Desktop\works\cv-1\dist\index.html133036671200180937 0
+48E:\Desktop\works\cv-1\dist\index.de158e3a.js.map133036672188693195 0
+36E:\Desktop\works\cv-1\src\index.html133036671199455847 0
+33E:\Desktop\works\cv-1\src\main.js133036672187856247 0
+44E:\Desktop\works\cv-1\dist\index.de158e3a.js133036672188683197 0
+38E:\Desktop\works\cv-1\.idea\.gitignore133036505595022336 0
+36E:\Desktop\works\cv-1\.idea\cv-1.iml133036505593420969 0
+39E:\Desktop\works\cv-1\.idea\modules.xml133036505593487352 0
+35E:\Desktop\works\cv-1\.idea\vcs.xml133036505593548775 0
+41E:\Desktop\works\cv-1\.idea\workspace.xml133036671202757754 0
