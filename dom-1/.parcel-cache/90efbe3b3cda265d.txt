@@ -1,0 +1,26 @@
+25
+27E:\Desktop\works\dom-1\dist133040821228699686 1
+29E:\Desktop\works\dom-1\.cache133040821228659675 1
+37E:\Desktop\works\dom-1\src\index.html133040818466482155 0
+28E:\Desktop\works\dom-1\.idea133040819131776047 1
+26E:\Desktop\works\dom-1\src133040821845280142 1
+33E:\Desktop\works\dom-1\src\dom.js133040812854620810 0
+34E:\Desktop\works\dom-1\src\main.js133040821845280142 0
+44E:\Desktop\works\dom-1\dist\dom.56111015.map133040821228699686 0
+43E:\Desktop\works\dom-1\dist\dom.56111015.js133040821228640493 0
+45E:\Desktop\works\dom-1\dist\index.755bdb92.js133040815383782064 0
+49E:\Desktop\works\dom-1\dist\index.755bdb92.js.map133040815383792068 0
+67E:\Desktop\works\dom-1\.cache\9114ff2ec28154d82ed97a47621e5dc7.json133040821228699686 0
+45E:\Desktop\works\dom-1\dist\index.de158e3a.js133040819891040687 0
+49E:\Desktop\works\dom-1\dist\index.de158e3a.js.map133040819891055695 0
+38E:\Desktop\works\dom-1\dist\index.html133040821227761485 0
+44E:\Desktop\works\dom-1\dist\main.3f8ec2ad.js133040821846502875 0
+45E:\Desktop\works\dom-1\dist\main.3f8ec2ad.map133040821846520726 0
+40E:\Desktop\works\dom-1\.idea\modules.xml133040806832861301 0
+39E:\Desktop\works\dom-1\.idea\.gitignore133040806834005517 0
+38E:\Desktop\works\dom-1\.idea\dom-1.iml133040806832792068 0
+36E:\Desktop\works\dom-1\.idea\vcs.xml133040806832921927 0
+42E:\Desktop\works\dom-1\.idea\workspace.xml133040819131776047 0
+67E:\Desktop\works\dom-1\.cache\bd0795a13cb4baecab0ca1d814af9c27.json133040821227761485 0
+67E:\Desktop\works\dom-1\.cache\e5b28916d49fdffbd9e7b80ad34f429e.json133040821227761485 0
+67E:\Desktop\works\dom-1\.cache\f71fa2799f4e03a152db3c862d0acd33.json133040821846492872 0
